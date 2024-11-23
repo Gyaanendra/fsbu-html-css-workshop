@@ -33,7 +33,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main button:hover {
+.main a:hover {
   background-color: black;
   color: rgb(243, 239, 239);
 }
