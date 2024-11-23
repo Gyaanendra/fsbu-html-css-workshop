@@ -1,0 +1,118 @@
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Enhanced Fade In Animation */
+@keyframes enhancedFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Parallax Base Styles */
+.parallax-container {
+  perspective: 1000px;
+  overflow-x: hidden;
+}
+
+.parallax-element {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+/* Section-specific animations */
+#about.animate-on-scroll {
+  transform: translateY(80px);
+}
+
+#projects.animate-on-scroll {
+  transform: translateY(60px) scale(0.98);
+}
+
+#contact.animate-on-scroll {
+  transform: translateY(40px) translateX(-20px);
+}
+*/
+
+/* Parallax Cards */
+.card {
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.card-header {
+  transform-style: preserve-3d;
+}
+
+.pattern {
+  transform: translateZ(-50px);
+}
+
+/* Terminal Parallax Effects */
+.terminal {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out;
+}
+
+.terminal-header {
+  transform: translateZ(20px);
+}
+
+.terminal-button {
+  transform: translateZ(30px);
+}
+
+/* Enhanced MainSec Animation */
+.MainSec,
+.app {
+  animation: enhancedFadeIn 3.8s cubic-bezier(0.5, 0, 0, 1) forwards;
+}
+
+/* Profile Picture Animation */
+.profilepic {
+  opacity: 0;
+  animation: enhancedFadeIn 1s cubic-bezier(0.5, 0, 0, 1) forwards,
+    float 6s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Social Icons Hover Animation */
+.social-icon {
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0, 1), filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+}

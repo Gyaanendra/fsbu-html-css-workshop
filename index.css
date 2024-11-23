@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+.main {
+  display: flex;
+  margin-top: 50vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main p {
+  font-size: 50px;
+}
+
+.main button {
+  font-size: 25px;
+  height: 50px;
+  width: 250px;
+  background-color: rgb(226, 233, 233);
+  border-radius: 20px;
+}
+
+.main a {
+  color: rgb(17, 17, 17);
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main button:hover {
+  background-color: black;
+  color: rgb(243, 239, 239);
+}
