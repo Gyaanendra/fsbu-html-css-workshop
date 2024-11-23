@@ -119,5 +119,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var button = document.getElementById('myButton');
 button.onclick = function() {
-  location.assign('/pro.html');
+  location.assign('./pro.html');
 }
